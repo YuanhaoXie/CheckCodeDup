@@ -19,4 +19,18 @@ To run it:
 ```sh
 ./nicard functions c ${/Path/of/the/test/file} default-report
 ```
+
+
+>-   To detect type 1     (exact) clones,                           set threshold=0.0
+>-   To detect type 2     (renamed) clones,                         set threshold=0.0 and rename=blind
+>-   To detect type 2c    (consistently renamed) clones,            set threshold=0.0 and rename=consistent
+>-   To detect type 3-1   (near-miss exact) clones,                 set threshold=0.3
+>-   To detect type 3-2   (near-miss renamed) clones,               set threshold=0.3 and rename=blind
+>-   To detect type 3-2c  (near-miss consistently renamed) clones,  set threshold=0.3 and rename=consistent  
+Example:
+```sh
+./nicard functions c ${/Path/of/the/test/file} default-report type1
+```  
+
+
 More informations in [Nicad](https://www.txl.ca/txl-nicaddownload.html)

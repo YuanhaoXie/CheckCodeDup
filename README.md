@@ -27,7 +27,8 @@ To run it:
 >-   To detect type 3-1   (near-miss exact) clones,                 set threshold=0.3
 >-   To detect type 3-2   (near-miss renamed) clones,               set threshold=0.3 and rename=blind
 >-   To detect type 3-2c  (near-miss consistently renamed) clones,  set threshold=0.3 and rename=consistent  
-Example:
+
+:  
 ```sh
 ./nicard functions c ${/Path/of/the/test/file} default-report type1
 ```  
